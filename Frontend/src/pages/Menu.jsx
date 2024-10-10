@@ -1,14 +1,15 @@
+/* eslint-disable react/prop-types */
 "use client";
 import { useState } from "react";
 import banner from '../assets/banner.jpg';
 import { Card , Alert } from "flowbite-react";
 import Topbar from "../components/Topbar";
 
-const Menu = () => {
+const Menu = ({handleAddToCart }) => {
   const [showNotification, setShowNotification] = useState(false); // State to manage notification globally
 
   const handleShowNotification = () => {
-    setShowNotification(true);
+    setShowNotification(true)
     setTimeout(() => {
       setShowNotification(false); // Hide the notification after 3 seconds
     }, 3000);
@@ -34,35 +35,70 @@ const Menu = () => {
           imgAlt="Chicken Burger"
           productName="Insanely Mid And Extra Sumptilous Burger"
           price={99}
-          onAddToCart={handleShowNotification} // Pass the callback
+          onAddToCart={() => {
+            handleShowNotification();
+            handleAddToCart({
+              imgSrc: "https://img.freepik.com/free-photo/delicious-burger-with-fresh-ingredients_23-2150857908.jpg",
+              productName: "Insanely Mid And Extra Sumptilous Burger",
+              price: 99,
+            });
+          }}
         />
         <ProductCard 
           imgSrc="https://img.freepik.com/premium-photo/air-floating-big-burger-with-meat-patty-cheese-tomatoes-lettuce_1305425-124.jpg?w=740"
           imgAlt="Utterly Obnoxius And Unappetizing Burger"
           productName="Utterly Obnoxius And Unappetizing Burger"
           price={199}
-          onAddToCart={handleShowNotification}
+          onAddToCart={() => {
+            handleShowNotification();
+            handleAddToCart({
+              imgSrc: "https://img.freepik.com/free-photo/delicious-burger-with-fresh-ingredients_23-2150857908.jpg",
+              productName: "Insanely Mid And Extra Sumptilous Burger",
+              price: 99,
+            });
+          }}
         />
         <ProductCard 
           imgSrc="https://img.freepik.com/premium-photo/tasty-melted-burger-juicy-flavorpacked-delight_1302525-14998.jpg?size=626&ext=jpg&ga=GA1.1.550004339.1728573468&semt=ais_hybrid-rr-similar"
           imgAlt="Pasta"
           productName="Suprisingly Normal And Slightly Appetizing Burger"
           price={299}
-          onAddToCart={handleShowNotification}
+          onAddToCart={() => {
+            handleShowNotification();
+            handleAddToCart({
+              imgSrc: "https://img.freepik.com/free-photo/delicious-burger-with-fresh-ingredients_23-2150857908.jpg",
+              productName: "Insanely Mid And Extra Sumptilous Burger",
+              price: 99,
+            });
+          }}
         />
         <ProductCard 
           imgSrc="https://img.freepik.com/premium-photo/tasty-burger-isolated-dark-background-fresh-hamburger-fastfood-with-beef-cheese_1280668-704.jpg?w=740"
           imgAlt="Milkshake"
           productName="At This Price point If This Burger Aint Good IDK What Is"
           price={399}
-          onAddToCart={handleShowNotification}
+          onAddToCart={() => {
+            handleShowNotification();
+            handleAddToCart({
+              imgSrc: "https://img.freepik.com/free-photo/delicious-burger-with-fresh-ingredients_23-2150857908.jpg",
+              productName: "Insanely Mid And Extra Sumptilous Burger",
+              price: 99,
+            });
+          }}
         />
         <ProductCard 
           imgSrc="https://img.freepik.com/premium-photo/tasty-burger-isolated-dark-background-fresh-hamburger-fastfood-with-beef-cheese_1280668-704.jpg?w=740"
           imgAlt="Milkshake"
           productName="Better be Gold Inside All That Burger - Aravind"
           price={499}
-          onAddToCart={handleShowNotification}
+          onAddToCart={() => {
+            handleShowNotification();
+            handleAddToCart({
+              imgSrc: "https://img.freepik.com/free-photo/delicious-burger-with-fresh-ingredients_23-2150857908.jpg",
+              productName: "Insanely Mid And Extra Sumptilous Burger",
+              price: 99,
+            });
+          }}
         />
       </div>
       

@@ -1,4 +1,11 @@
-const OrderSummary = () => {
+/* eslint-disable react/prop-types */
+const OrderSummary = ({ cartItems }) => {
+  const originalPrice = cartItems.reduce((total, item) => total + item.price * item.quantity, 0);
+  const savings = 199; // Example fixed savings
+  const storePickup = 99; // Example store pickup fee
+  const tax = 50; // Example tax amount
+  const total = originalPrice - savings + storePickup + tax;
+
   return (
     <div className="space-y-4 rounded-lg border border-gray-200 bg-white p-4 shadow-sm dark:border-gray-700 dark:bg-gray-800 sm:p-6">
       <p className="text-xl font-semibold text-gray-900 dark:text-white">
@@ -11,7 +18,7 @@ const OrderSummary = () => {
               Original price
             </dt>
             <dd className="text-base font-medium text-gray-900 dark:text-white">
-              $7,592.00
+              ${originalPrice.toFixed(2)}
             </dd>
           </dl>
           <dl className="flex items-center justify-between gap-4">
@@ -19,7 +26,7 @@ const OrderSummary = () => {
               Savings
             </dt>
             <dd className="text-base font-medium text-green-600">
-              -$299.00
+              -${savings.toFixed(2)}
             </dd>
           </dl>
           <dl className="flex items-center justify-between gap-4">
@@ -27,7 +34,7 @@ const OrderSummary = () => {
               Store Pickup
             </dt>
             <dd className="text-base font-medium text-gray-900 dark:text-white">
-              $99
+              ${storePickup.toFixed(2)}
             </dd>
           </dl>
           <dl className="flex items-center justify-between gap-4">
@@ -35,7 +42,7 @@ const OrderSummary = () => {
               Tax
             </dt>
             <dd className="text-base font-medium text-gray-900 dark:text-white">
-              $799
+              ${tax.toFixed(2)}
             </dd>
           </dl>
         </div>
@@ -44,7 +51,7 @@ const OrderSummary = () => {
             Total
           </dt>
           <dd className="text-base font-bold text-gray-900 dark:text-white">
-            $8,191.00
+            ${total.toFixed(2)}
           </dd>
         </dl>
       </div>
