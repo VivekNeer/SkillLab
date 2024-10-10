@@ -2,8 +2,9 @@ import CustomNavbar from './components/Navbar';
 import CustomFooter from './components/Footer';
 import Home from './pages/Home';
 import Gallery from './pages/Gallery';
-import About from './pages/About';
-import Products from './pages/Products';
+import Menu from './pages/Menu';
+import Cart from './pages/Cart';
+// import Products from './pages/Products';
 import { Routes, Route } from 'react-router-dom';
 
 function App() {
@@ -14,8 +15,9 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/gallery" element={<Gallery />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/products" element={<Products />} />
+          <Route path="/menu" element={<Menu />} />
+          <Route path="/cart" element={<Cart />} />
+          {/* <Route path="/products" element={<Products />} /> */}
         </Routes>
       </div>
       <CustomFooter />

@@ -49,11 +49,11 @@ const CustomNavbar = () => {
             <Link to="/gallery" className="text-blue-600 font-protest text-xl">Gallery</Link>
           </Navbar.Link>
           <Navbar.Link>
-            <Link to="/about" className="text-blue-600 font-protest text-xl">About</Link>
+            <Link to="/menu" className="text-blue-600 font-protest text-xl">Menu</Link>
           </Navbar.Link>
-          <Navbar.Link>
+          {/* <Navbar.Link>
             <Link to="/products" className="text-blue-600 font-protest text-xl">Products</Link>
-          </Navbar.Link>
+          </Navbar.Link> */}
         </Navbar.Collapse>
       </Navbar>
         

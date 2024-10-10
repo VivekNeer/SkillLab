@@ -15,7 +15,7 @@ const Home = () => {
       </div>
 
       <div className="mx-auto mt-10 mb-0 max-w-screen-md text-center font-exo font-bold text-2xl">
-        <p>Reviews from our 'esteemed' customers</p>
+        <p>Reviews from our &apos;esteemed&apos; customers</p>
       </div>
 
       <div className="flex flex-col md:flex-row gap-8 flex-auto m-16">
@@ -56,6 +56,7 @@ const Home = () => {
   );
 };
 
+// eslint-disable-next-line react/prop-types
 const Review = ({ name, title, quote }) => {
   return (
     <figure className="mx-auto max-w-screen-md text-center">
