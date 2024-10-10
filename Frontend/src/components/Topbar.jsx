@@ -11,13 +11,11 @@ const Topbar = () => {
           <Navbar.Toggle />
         </div>
         <Navbar.Collapse>
-          <Navbar.Link Link to="/" className='text-lg'>
-            Home
-          </Navbar.Link>
-          <Navbar.Link href="#" className='text-lg'>Burgers</Navbar.Link>
-          <Navbar.Link href="#" className='text-lg'>Pizzas</Navbar.Link>
-          <Navbar.Link href="#" className='text-lg'>Fries</Navbar.Link>
-          <Navbar.Link href="#" className='text-lg'>Cold Drinks</Navbar.Link>
+        <Link to="/"><Navbar.Link className='text-lg'>Home</Navbar.Link></Link>
+        <Link to="/menu"><Navbar.Link href="#" className='text-lg'>Burgers</Navbar.Link></Link>
+        <Link to="/menu"><Navbar.Link href="#" className='text-lg'>Pizzas</Navbar.Link></Link>
+        <Link to="/menu"><Navbar.Link href="#" className='text-lg'>Fries</Navbar.Link></Link>
+        <Link to="/menu"><Navbar.Link href="#" className='text-lg'>Cold Drinks</Navbar.Link></Link>
         </Navbar.Collapse>
       </Navbar>
       </>

@@ -14,6 +14,7 @@ export default {
         protest: ['"Protest Strike"', 'cursive'],
         exo: ['"Exo 2"', 'sans-serif'],
         honk: ['Honk', 'sans-serif'], 
+        zilla: ['"Zilla Slab Highlight"', 'cursive'],
       },
     },
   },
