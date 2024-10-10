@@ -1,11 +1,10 @@
 /* eslint-disable react/prop-types */
-import { useState } from "react";
+// import { useState } from "react";
 import Topbar from "../components/Topbar";
 import MarqueeSection from "../components/MarqueeSection";
 import CartItem from "../components/CartItem";
 import OrderSummary from "../components/OrderSummary";
 
-// eslint-disable-next-line react/prop-types
 const Cart = ({ cartItems, setCartItems }) => {
   const handleRemove = (productName) => {
     setCartItems(cartItems.filter(item => item.productName !== productName));

@@ -52,9 +52,9 @@ const Menu = ({handleAddToCart }) => {
           onAddToCart={() => {
             handleShowNotification();
             handleAddToCart({
-              imgSrc: "https://img.freepik.com/free-photo/delicious-burger-with-fresh-ingredients_23-2150857908.jpg",
-              productName: "Insanely Mid And Extra Sumptilous Burger",
-              price: 99,
+              imgSrc:"https://img.freepik.com/premium-photo/air-floating-big-burger-with-meat-patty-cheese-tomatoes-lettuce_1305425-124.jpg?w=740",
+              productName: "Utterly Obnoxius And Unappetizing Burger",
+              price: 199,
             });
           }}
         />
@@ -66,9 +66,9 @@ const Menu = ({handleAddToCart }) => {
           onAddToCart={() => {
             handleShowNotification();
             handleAddToCart({
-              imgSrc: "https://img.freepik.com/free-photo/delicious-burger-with-fresh-ingredients_23-2150857908.jpg",
-              productName: "Insanely Mid And Extra Sumptilous Burger",
-              price: 99,
+              imgSrc: "https://img.freepik.com/premium-photo/tasty-melted-burger-juicy-flavorpacked-delight_1302525-14998.jpg?size=626&ext=jpg&ga=GA1.1.550004339.1728573468&semt=ais_hybrid-rr-similar",
+              productName: "Suprisingly Normal And Slightly Appetizing Burger",
+              price: 299,
             });
           }}
         />
@@ -80,23 +80,23 @@ const Menu = ({handleAddToCart }) => {
           onAddToCart={() => {
             handleShowNotification();
             handleAddToCart({
-              imgSrc: "https://img.freepik.com/free-photo/delicious-burger-with-fresh-ingredients_23-2150857908.jpg",
-              productName: "Insanely Mid And Extra Sumptilous Burger",
-              price: 99,
+              imgSrc: "https://img.freepik.com/premium-photo/tasty-burger-isolated-dark-background-fresh-hamburger-fastfood-with-beef-cheese_1280668-704.jpg?w=740",
+              productName: "At This Price point If This Burger Aint Good IDK What Is",
+              price: 399,
             });
           }}
         />
         <ProductCard 
           imgSrc="https://img.freepik.com/premium-photo/tasty-burger-isolated-dark-background-fresh-hamburger-fastfood-with-beef-cheese_1280668-704.jpg?w=740"
-          imgAlt="Milkshake"
+          imgAlt="Better be Gold Inside All That Burger - Aravind"
           productName="Better be Gold Inside All That Burger - Aravind"
           price={499}
           onAddToCart={() => {
             handleShowNotification();
             handleAddToCart({
-              imgSrc: "https://img.freepik.com/free-photo/delicious-burger-with-fresh-ingredients_23-2150857908.jpg",
-              productName: "Insanely Mid And Extra Sumptilous Burger",
-              price: 99,
+              imgSrc: "https://img.freepik.com/premium-photo/tasty-burger-isolated-dark-background-fresh-hamburger-fastfood-with-beef-cheese_1280668-704.jpg?w=740",
+              productName: "Better be Gold Inside All That Burger - Aravind",
+              price: 499,
             });
           }}
         />
@@ -108,7 +108,6 @@ const Menu = ({handleAddToCart }) => {
   );
 }
 
-// eslint-disable-next-line react/prop-types
 const ProductCard = ({ imgSrc, imgAlt, productName, price, onAddToCart }) => {
   const handleAddToCart = () => {
     onAddToCart(); // Call the passed function to show the notification
